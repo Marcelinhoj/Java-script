@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Elements</title>
+    <style>
+        body {
+            font-size: 3em;
+            background-color: antiquewhite;
+        }
+        .cor-do-texto {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <h3>Título em HTML</h3>
-    <p>Páragrafo de HTML</p>
+    <h3 class="cor-do-texto">Título em HTML</h3>
+    <p>Páragrafo em HTML</p>
+    <p>Parágrafo em HTML2</p>
 
     <div>
         Este texto esta dentro de uma div
@@ -18,6 +28,11 @@
         <input type = "text" name="text_usuario">
 
     </form>
+
+    <script>
+
+        console.log(document.getElementsByClassName('cor-de-texto'))
+    </script>
     
 </body>
 </html>
