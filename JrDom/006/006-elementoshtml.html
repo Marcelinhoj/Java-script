@@ -5,19 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementos</title>
+    <style>
+        body {
+            font-size: 1.4em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
 
-    <h3 id="titulo">Este texto tem <i><u>importancia</u></i></h3>
-    <div>
-        <h1>Título da notícia 1</h1>
+    <h3 id="titulo">Este texto tem
+         <i>
+
+        <u>importancia</u>
+
+        </i></h3>
+
+    <div class="noticia">
+        <h1>Título da notícia <strong>1 um</strong></h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at adipisci neque, autem dignissimos explicabo repellendus nemo perspiciatis cumque fugit, similique, pariatur a iste facere! Reprehenderit natus tempora magni est!</p>
     </div>
-    <img src="" alt="">
+
+    <div>
+        <h1>Título da notícia 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit deserunt facere dolore? Voluptatem rerum fugiat recusandae? A nam distinctio necessitatibus, quod pariatur aliquam vero ducimus voluptatum dicta commodi. Eum?</p>
+    </div>
+    <img src="images.jpg" alt="">
 
     <script>
-        let elemento = document.querySelector("#titulo");
-        console.log(elemento);
+        let elemento = document.querySelector(".noticia > h1");
+        console.log(elemento.outerHTML);
     </script>
     
 </body>
