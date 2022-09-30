@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulanco Atributos</title>    
+    <style>
+        .noticia{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(150,150,150);
+            background-color: rgba(128, 128, 128, 0.363);
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.699);
+            padding: 20px;
+            margin: 50px;
+            width: 500px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="noticia">
+        <h1>Título da Notícia</h1>
+        <h3 id="sumario_da_noticia">Sumário da notícia</h3>
+        <img src="imagem/images.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, odio. Voluptate eaque enim repellendus nihil inventore minus praesentium tempora quo qui, nisi adipisci totam excepturi non veritatis cupiditate aliquid quasi?</p>
+
+    </div>
+
+    <script>
+
+        let elemento = document.querySelector('h3')
+
+    //hasAttribute
+    if(elemento.hasAttribute('id')){
+        console.log('Sim');
+    }
+
+
+    </script>
+    
+</body>
+</html>
