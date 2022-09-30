@@ -25,7 +25,7 @@
     <div class="noticia">
         <h1>Título da Notícia</h1>
         <h3 id="sumario_da_noticia">Sumário da notícia</h3>
-        <img src="imagem/images.jpg" alt="">
+        <img src="imagem/brasil.jpg" alt="imagem do brasil">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, odio. Voluptate eaque enim repellendus nihil inventore minus praesentium tempora quo qui, nisi adipisci totam excepturi non veritatis cupiditate aliquid quasi?</p>
 
     </div>
@@ -38,6 +38,19 @@
     if(elemento.hasAttribute('id')){
         console.log('Sim');
     }
+
+   // getAttribute
+    console.log(elemento.getAttribute('id'));
+
+    //setAttribute
+    elemento.setAttribute('title', 'Título do Sumário')
+
+    // removeAttribute
+    let imagem = document.querySelector('img')
+    //imagem.removeAttribute('src')
+
+    // attributes
+    console.log(imagem.attributes['alt']);
 
 
     </script>
