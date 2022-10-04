@@ -11,13 +11,14 @@
             border: 1px solid gray;
             padding: 20px;
             margin: 20px;
-            font-size: 1.3em;
+            font-size: 2em;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         p{
             background-color: red;
             color: white;
+            font-size: 2em;
         }
 
     </style>
@@ -27,6 +28,42 @@
     <div class="container">
         Dentro da DIV
     </div>
+
+    <script>
+
+        let div = document.querySelector('.container')
+
+        // vamos adicionar testo antes do div
+       // div.before('AAAA')
+
+        // adicionar dentro do div, mas o inicio
+       // div.prepend('BBBB')
+
+        // adicionar dentro do div, mas no fim
+        //div.append('CCCC')
+
+        //adicionar a seguir ao div
+       // div.after('DDDD')
+
+       let p1 = document.createElement('p')
+       let p2 = document.createElement('p')
+       let p3 = document.createElement('p')
+       let p4 = document.createElement('p')
+       p1.innerText = 'Parágrafo 1'
+       p2.innerText = 'Parágrafo 2'
+       p3.innerText = 'Parágrafo 3'
+       p4.innerText = 'Parágrafo 4'
+
+       //colocar o paragrafo antes do div
+       div.before(p1)
+
+       div.prepend(p2)
+
+       div.append(p3)
+
+       div.after(p4)
+
+    </script>
     
 </body>
 </html>
