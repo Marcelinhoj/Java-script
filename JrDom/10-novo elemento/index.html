@@ -14,6 +14,7 @@
             padding: 20px;
             border: 1px solid gray;
             text-align: center;
+            font-size: 1.3em;
         }
 
         .alerta {
@@ -22,6 +23,7 @@
             background-color: red;
             color: white;
             font-weight: bold;
+            font-size: 1.3em;
 
         }
 
@@ -34,13 +36,17 @@
        
     </div>
 
+    <button onclick="executar()">clicar!</button>
+
     <script>
         // criar novo elemento
-        let novo_elemento = document.creatElement ('p')
+        let novo_elemento = document.creatElement ('p');
         novo_elemento.className = "alerta";
         novo_elemento.innerText = "Está é uma mensagem de alerta!";
 
         // adicionar o novo elemento ao div existente
+        let elemento = document.querySelector('.caixa');
+        elemento.appendChild(novo_elemento);
 
 
     </script>
