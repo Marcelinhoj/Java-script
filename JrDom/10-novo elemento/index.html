@@ -19,7 +19,9 @@
         .alerta {
             padding: 5px;
             text-align: center;
-            
+            background-color: red;
+            color: white;
+            font-weight: bold;
 
         }
 
@@ -28,10 +30,17 @@
 </head>
 <body>
     <div class="caixa">
-        <p>Nesta div apenas existe um paragrafo.</p>
+        <p>Nesta div apenas existe um parágrafo.</p>
+       
     </div>
 
     <script>
+        // criar novo elemento
+        let novo_elemento = document.creatElement ('p')
+        novo_elemento.className = "alerta";
+        novo_elemento.innerText = "Está é uma mensagem de alerta!";
+
+        // adicionar o novo elemento ao div existente
 
 
     </script>
