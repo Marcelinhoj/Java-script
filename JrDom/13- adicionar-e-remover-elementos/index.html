@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar e remover elementos</title>
+    <style>
+        body {
+            background-color: lightblue ;
+            font-size: 1.3em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            border: 1px solid gray;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container" class="container">
+        <p>Parágrafo dentro da DIV</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <script>
+        //clone
+        //let div2 = document.querySelector("#container").cloneNode(true)
+       // document.querySelector("#container").after(div2)
+
+       //remover elementos
+       //document.querySelector("#container").remove()
+
+       document.querySelectorAll("#container > ul > li")[0].remove()
+
+
+    </script>
+    
+</body>
+</html>
