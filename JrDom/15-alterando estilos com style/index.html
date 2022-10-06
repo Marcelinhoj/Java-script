@@ -13,9 +13,9 @@
         }
         .p-1 {
             background-color: yellow;
-            color: black;
+            color: rgb(0, 0, 0);
             padding: 10px;
-            border: 1px solid black;
+            border: 3px solid red;
         }
     </style>
 </head>
@@ -25,6 +25,11 @@
 
     <script>
         let p = document.querySelector('p')
+        //p.style.backgroundColor = 'green';
+        //p.style.border = '10px solid black'
+        p.style.borderWidth = '10px'
+        p.style.borderStyle = 'dashed'
+        p.style.cssText = 'background-color: blue'
     </script>
     
 </body>
