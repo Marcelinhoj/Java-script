@@ -7,11 +7,14 @@
     <title>Estilos e Classes</title>
 
     <style>
-        .p-1{
+        body{
+            font-size: 2em;
+        }
+        .p-1 {
             background-color: yellow;
         }
-        .p-2{
-            background-color: green0;
+        .p-2 {
+            background-color: green;
         }
         .espaco{
             padding: 10px;
@@ -23,14 +26,26 @@
 </head>
 <body>
 
-    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="p-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, esse?</p>
 
-    <div>
-
-    </div>
-
+  
     <script>
-        
+        let p = document.querySelector("p")
+
+        //className é uma propriedade que permite ler e alterar
+        //p.className = 'p-2'
+        //console.log(p.className)
+
+        //p.classList.add('p-2')
+       // p.classList.add('espaco')
+      // p.classList.toggle('espaco')
+
+      if(p.classList.contains('espaco')){
+        console.log('tem espaço')        
+      } else {
+        console.log('não tem espaço')
+      }
+
 
     </script>
     
