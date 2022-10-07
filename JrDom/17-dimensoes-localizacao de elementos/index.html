@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensões e Localização</title>
+    <style>
+        body {
+            background-color:rgba(153, 119, 145, 0.479);
+            font-size: 1.6em;
+        }
+        div {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 50px auto;
+            background-color: lightblue;
+            overflow: auto;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est reiciendis aliquam commodi! Eius, atque natus accusamus quos omnis rem unde deserunt delectus. Earum aliquam odio porro iusto similique dolore sunt expedita voluptatem voluptate quibusdam iste quod quia, error ut sequi nisi dolores voluptas nesciunt excepturi fugiat odit esse. Vel, quisquam!
+    </div>
+
+    <p id="propriedades"></p>
+    <button onclick="buscar_propriedades()">Executar</button>
+
+    <script>
+        function buscar_propriedades(){
+        let div = document.querySelector("div")
+        let p = document.querySelector("#propriedades")
+
+        let resultados = ""
+        resultados += "offserLeft = " + div.offsetLeft + ""
+
+        p.textContent = resultados
+        }
+
+    </script>
+    
+</body>
+</html>
