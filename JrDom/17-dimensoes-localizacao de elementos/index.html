@@ -37,7 +37,13 @@
         let p = document.querySelector("#propriedades")
 
         let resultados = ""
-        resultados += "offserLeft = " + div.offsetLeft + ""
+        resultados += "offsetLeft = " + div.offsetLeft + ""
+        resultados += "offsetTop = " + div.offsetTop + ""
+        resultados += "offsetWidth = " + div.offsetWidth + ""
+        resultados += "offsetHeight = " + div.offsetHeight + ""
+
+        resultados += "scrollTop = " + div.scrollTop + ""
+        resultados += "scrollHeight = " + div.scrollHeight + ""
 
         p.textContent = resultados
         }
