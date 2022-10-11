@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos JS</title>
+
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        h1 {
+            margin: 50px;
+
+        }
+        .centrar {
+            text-align: center;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <div class="centrar">
+        <h1>Texto original de HTML</h1>
+        <button onclick="alterar_texto()">Clique aqui</button>
+        <p>Também posso clicar aqui</p>
+    </div>
+
+    <script>
+        document.querySelector("p").onclick = function(){
+            document.querySelector("h1").textContent = "Texto alterado no evento onclick no evento parágrafo"
+        }
+
+        function alterar_texto(){
+            document.querySelector("h1").textContent = "Texto alterado no evento Onclick"
+        }
+    </script>
 </body>
 </html>
