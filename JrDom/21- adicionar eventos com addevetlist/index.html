@@ -25,7 +25,8 @@
 
     <script>
         document.querySelector("#adicionar").addEventListener('click', adicionar_eventos)
-        function adicionar_enventos(){
+
+        function adicionar_eventos(){
             let e = document.querySelector("#botao")
             e.addEventListener('click', executar_1)
             e.addEventListener('click', executar_2)
@@ -36,6 +37,9 @@
             document.querySelector('#titulo_1').textContent = agora.getSeconds();
 
         }
+        function executar_2(){
+            let agora = new Date()
+            document.querySelector('#titulo_2').textContent = agora.getSeconds();
 
     </script>
     
