@@ -9,27 +9,30 @@
         body{
             background-color: antiquewhite;
         }
-        #fundo-exe{
-            background-color: yellow;
-        }
+      
 
     </style>
 </head>
 <body>
     <h1>Título 1</h1>
-    <button id="fundo" onclick="executar">Fundo Amaredo</button>
+    <button>Fundo Amaredo</button>
 
     <script>
 
-        let botao = document.querySelector("button").onclick = () => {
+        let botao = document.querySelector("button").onclick = (e) => {
+
             let elemento = document.querySelector("h1")
       
 
-       if(elemento.style.backgroundcolor == ""){    
-            elemento.style.backgroundcolor = "yellow"
+       if(elemento.style.backgroundColor == ""){    
+            elemento.style.backgroundColor = "yellow"
+            e.target.textContent = "Fundo Transparente"
        }else {
         elemento.style.backgroundColor = ""
+        e.target.textContent = "Fundo Amarelo"
        }
+
+    }
 
 
     </script>
