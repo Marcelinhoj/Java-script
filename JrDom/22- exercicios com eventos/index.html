@@ -23,9 +23,13 @@
 
         let botao = document.querySelector("button").onclick = () => {
             let elemento = document.querySelector("h1")
-        }
+      
 
-       
+       if(elemento.style.backgroundcolor == ""){    
+            elemento.style.backgroundcolor = "yellow"
+       }else {
+        elemento.style.backgroundColor = ""
+       }
 
 
     </script>
