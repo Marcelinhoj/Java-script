@@ -26,7 +26,29 @@
     </div>
 
     <script>
-        
+
+        document.querySelector("div").addEventListener("mousedown", () => { 
+           //console.log(event.button)
+
+           if(event.shiftKey){
+                console.log('Ok - shift')
+           }
+
+           if(event.alttKey){
+            console.log('Ok - alt')
+           }
+
+           if(event.crtltKey){
+            console.log('Ok - control')
+           }
+
+           if(event.crtlt){
+            console.log('Ok - cont')
+           }
+
+
+
+        })
     </script>
 
 </body>
