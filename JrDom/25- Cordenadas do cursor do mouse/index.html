@@ -11,10 +11,30 @@
         margin: 0;
         padding: 0;            
     }
-    
+    div {
+        padding: 30px;
+        background-color: yellow;
+    }
     </style>
 </head>
 <body>
+    <div>
+        Este é meu elemento
+    </div>
+
+    <script>
+        document.querySelector("div").addEventListener("mousemove", () =>{
+            //console.log(event.pageX + ":" + event.pageY)
+
+            if(event.pageX <= 100){
+                event.target.style.backgroundColor = "red"
+            }else if (event.pageX >= 600){
+                event.target.style.backgroundColor = "green"
+            }else {
+                event.target.style.backgroundColor = "yellow"
+            }
+        })
+    </script>
     
 </body>
 </html>
