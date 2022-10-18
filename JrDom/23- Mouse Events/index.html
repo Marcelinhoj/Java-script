@@ -12,6 +12,7 @@
         div{
             padding: 30px;
             background-color: yellow;
+            font-size: 3em;
         }
 
 
@@ -23,7 +24,20 @@
   </div>
 
   <script>
+
+    document.querySelector("div").addEventListener('click', () => {console.log('click')})
+    document.querySelector("div").addEventListener('mousedown', () => {console.log('mouse down')})
+    document.querySelector("div").addEventListener('mouseup', () => {console.log('mouse up')})
+
+   // document.querySelector("div").addEventListener('mouseenter', () => {console.log('mouse enter')})
+   // document.querySelector("div").addEventListener('mouseleave', () => {console.log('mouseleave')})
+
+    //document.querySelector("div").addEventListener('mousemove', () => {console.log('mouse move')})
+
+    //document.querySelector("div").addEventListener('doubleclick', () => {console.log('double click')})
+
     
+
   </script>
     
 </body>
