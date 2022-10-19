@@ -14,16 +14,29 @@
 </head>
 <body>
 
-    <form action="#" method="post"></form>
+    <form action="#" method="post" name="frm_login">
 
     <div>    
         <label for="usuario">Usuário</label>
-        <input type="text" name="usuario" id="usuario">
+        <input type="text" name="usuario" id="usuario" value="joao">
     </div>
 
-    <div></div>
+    <div>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" value="123456">
+    </div>
+
+    <div>
+        <input type="submit" value="Entrar">
+    </div>
 
     </form>
+
+    <script>
+        console.log(document.forms.frm_login.usuario.value)
+        console.log(document.forms.frm_login.senha.value)
+
+    </script>
     
 </body>
 </html>
