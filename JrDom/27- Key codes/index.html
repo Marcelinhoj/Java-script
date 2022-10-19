@@ -12,17 +12,13 @@
     <script>
         let elemento = document.querySelector("#caixa_texto")
 
-        elemento.addEventListener('keydow', (evento) => {
-            if(evento.code == 'F1'){
-                evento.preventDefault()
-                teste()
+        elemento.addEventListener('keydown', (evento) => {
+            if(evento.code == 'ArrowUp'){
+                console.log('Pressionou a tecla de cursor para cima')
             }
         })
 
-        function teste()
-        {
-            console.log('teste')
-        }
+     
 
     </script>
     
