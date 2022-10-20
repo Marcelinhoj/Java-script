@@ -41,7 +41,20 @@
         let senha = document.querySelector('[name="senha"]')
 
         //focus
-        usuario.addEventListener
+        usuario.addEventListener('focus', (evento) => {
+            evento.target.classList.add('focus')
+        })
+        senha.addEventListener('focus', (evento) => {
+            evento.target.classList.add('focus')
+        })
+
+        //blur
+        usuario.addEventListener('blur', (evento) => {
+            evento.target.classList.remove('focus')
+        })
+        senha.addEventListener('blur', (evento) => {
+            evento.target.classList.remove('focus')
+        })
            
     </script>
     
