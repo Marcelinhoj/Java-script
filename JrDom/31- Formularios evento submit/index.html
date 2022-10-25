@@ -29,7 +29,16 @@
     </div>
 
     <script>
-        let
+        let formulario = document.querySelector("formulario")
+        formulario.addEventListener('submit', (evento) => {
+            console.log('teste')
+
+            // efetuar verificações e validaçoes
+
+            // no caso de validação OK, submeter, caso contrário preventDefault()
+
+            evento.preventDefault()
+        })
     </script>
 
 </body>
