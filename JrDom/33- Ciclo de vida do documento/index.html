@@ -10,8 +10,12 @@
         document.addEventListener('DOMContentLoaded', () => {
             console.log('documento carregado')
         })
+        window.addEventListener('load', () => {
+            console.log('Documento Completo')
+            document.querySelector("h1").textContent = "Alterado"
+        })
 
-        document.querySelector("h1").textContent = "Alterado"
+       
     </script>
 </head>
 <body>
