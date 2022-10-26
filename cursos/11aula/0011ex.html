@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Origem</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+        #cor{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>Nacionalidade</h1>
@@ -22,15 +30,14 @@
             var res = window.document.querySelector('div#res')
             var pais = (txtn.value)
 
-            res.innerHTML =  `<p>Vivendo em ${pais}</p>`
-            if (pais != Brasil){
-                res.innerHTML = `<p>Você é estrangeiro.</p>`
+            res.innerHTML =  `<p>Vivendo em <strong >${pais}</strong></p>`
+            if (pais != 'Brasil'){
+                res.innerHTML += `<p>Você é <strong id="cor">Estrangeiro</strong>.</p>`
             }else{
-                res.innerHTML = `<p>Você é Brasileiro.</p>`
-            }
+                res.innerHTML = `<p>Você é <strong id="cor">Brasileiro</strong>.</p>`
+            }         
 
-            res.innerHTML = `<p>Viva a sua nação</p>`
-            
+            res.innerHTML += `<p>Viva a sua nação</p>`           
 
         }
 
