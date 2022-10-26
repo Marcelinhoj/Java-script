@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Nacionalidade</h1>
-    Vivendo em <input type="text" name="txtn" id="txtn">
+    Vivendo em <input type="text" name="txtnasc" id="txtnasc">
 
     <input type="button" value="Verificar" onclick="calcular()">
 
@@ -18,12 +18,18 @@
 
     <script>
         function calcular(){
-            var txtn = window.document.querySelector('input#txtn')
-            var res = widow.document.querySelector('div#res')
+            var txtn = window.document.querySelector('input#txtnasc')
+            var res = window.document.querySelector('div#res')
             var pais = (txtn.value)
 
-            res.innerHTML +=  `<p>Vivendo em ${pais}</p>`
-            res.innerHTML += `<p>Viva a sua nação</p>`
+            res.innerHTML =  `<p>Vivendo em ${pais}</p>`
+            if (pais != Brasil){
+                res.innerHTML = `<p>Você é estrangeiro.</p>`
+            }else{
+                res.innerHTML = `<p>Você é Brasileiro.</p>`
+            }
+
+            res.innerHTML = `<p>Viva a sua nação</p>`
             
 
         }
