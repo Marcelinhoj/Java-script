@@ -9,7 +9,21 @@
 <body>
     <h1>Nacionalidade</h1>
     Vivendo em <input type="text" name="nacionalidade" id="nacionalidade">
-    <input type="button" value="Verificar">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var nasc = window.document.querySelector('input#nacionalidade')
+            var res = widow.document.querySelector(div#res)
+            var pais = window.document.querySelector(text.value)
+
+            res.innerHTML +=  <p>`Vivendo em ${pais}`</p>
+
+        }
+
+    </script>
     
 </body>
 </html>
