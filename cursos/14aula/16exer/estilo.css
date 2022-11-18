@@ -14,6 +14,8 @@ section {
     border-radius: 10px;
     padding: 15px;
     width: 500px;
+    min-width: 100px;
+    
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
 
@@ -24,4 +26,11 @@ footer{
     text-align: center;
     font-style: italic;
 
+}
+
+div#res{
+    min-width: 300px;
+    background-color: rgb(159, 213, 238);
+    padding : 10px;
+    border-radius: 10px;
 }
