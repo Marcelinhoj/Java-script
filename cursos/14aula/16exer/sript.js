@@ -19,12 +19,12 @@ function contar() {
 
        }
        if (i <  f){
-        // Contagem crescente
+        // Contagem crescente.
         for ( let c = i; c <= f; c +=p){
             res.innerHTML += ` ${c} \u{1F449}`
         }
        } else {
-        // Contagem Regressiva     
+        // Contagem Regressiva.     
 
        for (let c = i; c >= f; c -= p){
         res.innerHTML += ` ${c} \u{1F449}`       
