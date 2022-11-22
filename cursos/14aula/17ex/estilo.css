@@ -25,3 +25,9 @@ footer{
     font-style: italic;
 
 }
+div#res{
+    min-width: 300px;
+    background-color: rgb(159, 213, 238);
+    padding : 10px;
+    border-radius: 10px;
+}
